@@ -13,25 +13,22 @@ class AppColors {
 
 // ================ TYPOGRAPHY ================
 class AppTypography {
-  static const String fontFamily = 'Inter';
+  // static const String fontFamily = 'Inter';
 
   // Splash Screen
   static const TextStyle splashTitle = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 36,
     fontWeight: FontWeight.bold,
     color: AppColors.white,
   );
 
   static const TextStyle splashLoadingText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 24,
     fontWeight: FontWeight.w600,
     color: AppColors.white,
   );
 
   static const TextStyle splashFeatureText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 16,
     fontWeight: FontWeight.w400,
     color: AppColors.white,
@@ -39,56 +36,48 @@ class AppTypography {
 
   // Login/Signup Screen
   static const TextStyle welcomeTitle = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 38,
     fontWeight: FontWeight.bold,
     color: AppColors.black,
   );
 
   static const TextStyle subtitle = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 18,
     fontWeight: FontWeight.w400,
     color: AppColors.darkGrey,
   );
 
   static const TextStyle signupTitle = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 32,
     fontWeight: FontWeight.bold,
     color: AppColors.black,
   );
 
   static const TextStyle buttonText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 16,
     fontWeight: FontWeight.bold,
     color: AppColors.black,
   );
 
   static const TextStyle accountText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 14,
     fontWeight: FontWeight.w400,
     color: AppColors.darkGrey,
   );
 
   static const TextStyle signupLinkText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 14,
     fontWeight: FontWeight.w400,
     color: AppColors.darkGreen,
   );
 
   static const TextStyle checkboxText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: AppColors.black,
   );
 
   static const TextStyle socialButtonText = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 14,
     fontWeight: FontWeight.w600,
     color: AppColors.black,

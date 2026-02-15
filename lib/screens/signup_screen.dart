@@ -170,7 +170,6 @@ class _SignupScreenState extends State<SignupScreen> {
                 TextSpan(
                   text: 'Terms of service',
                   style: TextStyle(
-                    fontFamily: AppTypography.fontFamily,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
                     color: AppColors.darkGreen,
@@ -184,7 +183,6 @@ class _SignupScreenState extends State<SignupScreen> {
                 TextSpan(
                   text: 'privacy Policy',
                   style: TextStyle(
-                    fontFamily: AppTypography.fontFamily,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
                     color: AppColors.darkGreen,

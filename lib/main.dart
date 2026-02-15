@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 import 'screens/grocery_list_page.dart';
 import 'screens/item_details_page.dart';
+import 'screens/cart_page.dart';
+import 'screens/checkout_page.dart';
+import 'screens/order_successful_page.dart';
+import 'screens/order_tracking_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,19 +19,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Lanka Smart Mart',
       theme: ThemeData(
-        fontFamily: 'Inter',
         useMaterial3: true,
         scaffoldBackgroundColor: Colors.transparent,
+        fontFamily: 'Inter',
       ),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
         '/grocery': (context) => const GroceryListPage(),
         '/item': (context) => const ItemDetailsPage(),
-        '/cart': (context) => const _CartPage(),
+        '/cart': (context) => const CartPage(),
         '/orders': (context) => const _MyOrdersPage(),
         '/profile': (context) => const _ProfilePage(),
         '/settings': (context) => const _SettingPage(),
+        '/checkout': (context) => const CheckoutPage(),
+        '/order_successful': (context) => const OrderSuccessfulPage(),
+        '/order_tracking': (context) => const OrderTrackingPage(),
       },
       debugShowCheckedModeBanner: false,
     );

@@ -37,7 +37,6 @@ class AppTextField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hint,
           hintStyle: const TextStyle(
-            fontFamily: AppTypography.fontFamily,
             color: Color(0xFFBDBDBD),
             fontSize: 14,
             fontWeight: FontWeight.w400,
@@ -49,7 +48,6 @@ class AppTextField extends StatelessWidget {
           ),
         ),
         style: const TextStyle(
-          fontFamily: AppTypography.fontFamily,
           color: AppColors.black,
           fontSize: 14,
           fontWeight: FontWeight.w400,

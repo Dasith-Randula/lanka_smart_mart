@@ -27,10 +27,11 @@ class GroceryListPage extends StatelessWidget {
                 children: <Widget>[
                   const SizedBox(height: 8),
                   // Top image
-                  SizedBox(
+                  Container(
                     width: 411,
                     height: 274,
-                    child: Image.asset('assets/images/grocery_top.jpg', fit: BoxFit.cover),
+                    color: Colors.green.shade200,
+                    child: Icon(Icons.image, color: Colors.white, size: 50),
                   ),
                   const SizedBox(height: 12),
                   // Horizontal category frame
@@ -82,7 +83,6 @@ class GroceryListPage extends StatelessWidget {
                           const Text(
                             'Latest',
                             style: TextStyle(
-                              fontFamily: 'Inter',
                               fontWeight: FontWeight.bold,
                               fontSize: 12,
                               color: Colors.black,
@@ -112,10 +112,11 @@ class GroceryListPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   // Bottom image
-                  SizedBox(
+                  Container(
                     width: 412,
                     height: 125,
-                    child: Image.asset('assets/images/grocery_bottom.jpg', fit: BoxFit.cover),
+                    color: Colors.blue.shade200,
+                    child: Icon(Icons.image, color: Colors.white, size: 30),
                   ),
                   const SizedBox(height: 80),
                 ],
@@ -141,19 +142,17 @@ class GroceryCategory extends StatelessWidget {
       height: 75,
       child: Column(
         children: <Widget>[
-          ClipOval(
-            child: SizedBox(
-              width: 80.56,
-              height: 75,
-              child: Image.asset(image, fit: BoxFit.cover),
-            ),
+          CircleAvatar(
+            radius: 37.28,
+            backgroundColor: Colors.green.shade200,
+            child: Icon(Icons.category, color: Colors.white),
           ),
           const SizedBox(height: 4),
           SizedBox(
             width: 80.56,
             child: Text(
               name,
-              style: const TextStyle(fontFamily: 'Inter', fontSize: 12, color: Colors.black),
+              style: const TextStyle(fontSize: 12, color: Colors.black),
               textAlign: TextAlign.center,
             ),
           ),
@@ -185,9 +184,17 @@ class LatestItem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SizedBox(width: 97, height: 80, child: Image.asset(image, fit: BoxFit.cover)),
+            Container(
+              width: 97,
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.green.shade100,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Icon(Icons.shopping_cart, color: Colors.green, size: 40),
+            ),
             const SizedBox(height: 6),
-            Text(name, style: const TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.bold, fontSize: 12), textAlign: TextAlign.center),
+            Text(name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12), textAlign: TextAlign.center),
           ],
         ),
       ),

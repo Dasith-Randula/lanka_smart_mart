@@ -26,13 +26,11 @@ class HomePage extends StatelessWidget {
                 children: <Widget>[
                   const SizedBox(height: 8),
                   // Top banner image
-                  SizedBox(
+                  Container(
                     width: 412.59,
                     height: 412,
-                    child: Image.asset(
-                      'assets/images/home_banner.jpg',
-                      fit: BoxFit.cover,
-                    ),
+                    color: Colors.orange.shade200,
+                    child: Icon(Icons.store, color: Colors.white, size: 100),
                   ),
                   const SizedBox(height: 16),
                   // Category grid 2x2
@@ -122,17 +120,20 @@ class CategoryBox extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
-                fontFamily: 'Inter',
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
                 color: Colors.black,
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            Container(
               width: 169,
               height: 95,
-              child: Image.asset(image, fit: BoxFit.cover),
+              decoration: BoxDecoration(
+                color: Colors.green.shade200,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Icon(Icons.category, color: Colors.white, size: 40),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 12.0),
@@ -149,7 +150,6 @@ class CategoryBox extends StatelessWidget {
                   child: Text(
                     'Discover',
                     style: TextStyle(
-                      fontFamily: 'Inter',
                       fontSize: 14,
                       color: const Color(0xFF08CB00).withOpacity(0.55),
                       fontWeight: FontWeight.normal,

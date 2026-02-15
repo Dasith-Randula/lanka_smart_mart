@@ -42,7 +42,7 @@ class _NavItem extends StatelessWidget {
           children: <Widget>[
             Icon(icon, size: 24, color: activeColor),
             const SizedBox(height: 4),
-            Text(label, style: const TextStyle(fontFamily: 'Inter', fontSize: 10, color: activeColor)),
+            Text(label, style: TextStyle(fontSize: 10, color: activeColor)),
           ],
         ),
       ),
